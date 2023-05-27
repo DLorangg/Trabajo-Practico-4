@@ -1,0 +1,143 @@
+/* Variables */
+:root{
+    --boton: rgb(16, 26, 173);
+    --letra: #fff;
+    --fondo: rgb(69, 67, 62);
+}
+/* Fuentes */
+@font-face {
+    font-family: 'Liberation serif';
+    src: url('../FUENTES/LiberationSerif-Regular.ttf');
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../FUENTES/Times New Roman.ttf');
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Times New Roman Bold';
+    src: url('../FUENTES/times new roman bold.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+/* Estilos */
+body{
+    margin: 0;
+    color: var(--letra);
+    font-family: 'Times New Roman';
+    background-color: #383836;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.papa{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+}
+header{
+    margin-top: 1.5%;
+    display: flex;
+    background-color: var(--fondo);
+    height: 120px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+}
+header h2{
+    font-family: 'Liberation Serif';
+    font-style: normal;
+    font-size: 20px;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+.logo{
+    width: 90px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+nav .boton{
+    font-family: 'Times New Roman Bold';
+    font-size: 20px;
+    padding: 10px 25px;
+    color: var(--letra);
+    background: var(--boton);
+    border-radius: 50px;
+    border: 2px solid transparent;
+    transition: all 30ms ease;
+    letter-spacing: 0px;
+    margin: 10px;
+}
+nav .boton:hover{
+    font-size: 20px;
+    border: 2px solid var(--letra);
+}
+#dese{
+    width: 100%;
+    text-align: center;
+    border-radius: 40px;
+    background-color: var(--fondo);
+    position: relative;
+    font-family: 'Liberation serif';
+    font-size: 20;
+    font-weight: 20; 
+}
+
+.desencriptar{
+    border-radius: 40px;
+    background-color: var(--fondo);
+    position: relative;
+    padding: 10px;
+}
+
+.desencriptar {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #383836;
+    border: 1px solid var(--fondo);
+    border-radius: 5px;
+}
+
+.desencriptar input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--fondo);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.desencriptar button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.desencriptar label {
+    margin-bottom: 5px;
+}
+
+.desencriptar p#resultado {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#resultado{
+    text-align: center;
+}
+
+#mensaje-copiado {
+    text-align: center;
+}

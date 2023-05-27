@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desencriptar</title>
+    <link rel="stylesheet" href="CSS/style2.css">
+</head>
+<body>
+    <div class="papa" id="comienzo">
+        <header>
+            <a href="http://epet20.com.ar/"><img src="IMG/logo.png" alt="Logo EPET 20" class="logo"></a>
+            <h2>Damián Lorang</h2>
+            <h2>Carrera Técnico Programador</h2>
+            <nav>
+            <a href="index.html" class="boton">Portada</a>
+            <a href="encriptar.html" class="boton">Encriptar</a> 
+            </nav>
+        </header>
+        <h1 id="dese">Desencriptar</h1>
+        <form class="desencriptar">
+            <input type="text" id="numero" inputmode="numeric" pattern="[0-9]{4}" oninput="validarInput()" maxlength="4" placeholder="Ingrese un número de 4 dígitos"/>
+            <button type="button" onclick="desencriptarNumero()">Desencriptar</button>
+
+            <p id="resultado" type="button" style="display: none;"></p>
+
+            <button id="btn-copiar" type="button" onclick="copiarResultadoDesenc()" style="display: none;">Copiar número</button>
+            <p id="mensaje-copiado" style="display: none;"></p>
+        </form>   
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
